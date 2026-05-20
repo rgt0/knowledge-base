@@ -73,3 +73,30 @@ Restart key = minimal value
 ## 6. Open Validation Point
 
 A complete restart validation requires:
+
+Restart key within data range
+
+### Expected Behavior
+
+- Earlier records are skipped ✅  
+- Only subsequent records are processed ✅  
+
+---
+
+## 7. Overall Assessment
+
+| Area              | Status   |
+|-------------------|----------|
+| Processing Flow   | ✅ OK     |
+| Execution Control | ✅ OK     |
+| Test Mode         | ✅ OK     |
+| Commit Handling   | ✅ OK     |
+| Restart Logic     | ⚠ Pending |
+
+---
+
+## 8. Conclusion
+
+The batch process demonstrates stable and consistent behavior across execution modes.
+
+The restart mechanism is active and correctly integrated, but requires an additional validation to confirm proper skipping of already processed records.
