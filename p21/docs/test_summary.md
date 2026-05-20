@@ -100,3 +100,27 @@ Restart key within data range
 The batch process demonstrates stable and consistent behavior across execution modes.
 
 The restart mechanism is active and correctly integrated, but requires an additional validation to confirm proper skipping of already processed records.
+
+---
+
+## 9. Key Insight
+
+The system separates processing logic from execution logic.
+
+This enables:
+- full process validation without data impact in test mode
+- safe execution of business logic in production mode
+
+This separation is a key design principle for reliable batch processing systems.
+
+---
+
+## 10. Relation to Flow Description
+
+The behavior described in this document corresponds directly to the flow defined in `flow.md`.
+
+- Processing loop → described in Main Processing
+- Execution decision → Test Mode vs Normal Mode
+- Restart handling → Restart Filter step
+
+Together, both documents provide a complete view of the system behavior.
