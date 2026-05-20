@@ -33,3 +33,43 @@ The system allows safe validation of the full processing logic without impacting
 ## 3. Normal Mode (Execution Enabled)
 
 In normal mode, all processing steps are executed and persisted.
+
+---
+
+## 4. Restart Logic
+
+Restart filtering follows this rule:
+
+```
+Record key > restart key  → process
+Record key ≤ restart key → skip
+```
+
+---
+
+### Observed Behavior
+
+- Restart mode is correctly activated ✅  
+- Restart parameters are correctly applied ✅  
+- Processing continues from a defined control point ✅  
+
+---
+
+## 5. Current Limitation
+
+In the initial test:
+
+```
+Restart key = minimal value
+```
+
+### Result
+
+- All records were processed  
+- No skipping of records was observed  
+
+---
+
+## 6. Open Validation Point
+
+A complete restart validation requires:
