@@ -1,0 +1,173 @@
+# COBOL Knowledge Sources
+
+## Purpose
+
+This repository contains COBOL mentoring materials collected and refined during mentoring, training, onboarding and knowledge-sharing activities between 2022 and the present.
+
+The repository serves as a source knowledge base for:
+
+- COBOL education
+- mentoring programs
+- onboarding new developers
+- AIMC experiments
+- lesson generation
+- exercise generation
+- knowledge graph construction
+- AI-assisted learning
+
+This repository is the canonical source of COBOL-related knowledge and teaching materials.
+
+---
+
+# Repository Structure
+
+## topics/
+
+Topic-oriented learning materials.
+
+Examples:
+
+- introduction-to-cobol.md
+- data-types.md
+- file-handling.md
+- control-statements.md
+- subprograms.md
+- db2.md
+- cics.md
+- modernization.md
+
+---
+
+## examples/
+
+Runnable COBOL examples.
+
+Examples:
+
+- hello-world.cbl
+- level88-example.cbl
+- file-read-example.cbl
+- perform-loop-example.cbl
+
+---
+
+## exercises/
+
+Programming exercises and assignments.
+
+Examples:
+
+- beginner-exercises.md
+- intermediate-exercises.md
+- mentoring-tasks.md
+- mini-projects.md
+
+---
+
+## debugging/
+
+Troubleshooting and production-support knowledge.
+
+Examples:
+
+- common-errors.md
+- file-status.md
+- debugging-patterns.md
+- production-incidents.md
+
+---
+
+## references/
+
+Reference materials and external resources.
+
+Examples:
+
+- intrinsic-functions.md
+- compiler-options.md
+- reserved-words.md
+- useful-links.md
+
+---
+
+## methodology/
+
+Mentoring and learning methodology.
+
+Examples:
+
+- mentoring-principles.md
+- onboarding-guidelines.md
+- learning-paths.md
+- coaching-notes.md
+
+---
+
+## legacy/
+
+Historic source materials preserved for knowledge extraction and future processing.
+
+Examples:
+
+- cob-old.md
+- mentoring-2024.md
+- dev-course-2024.md
+
+---
+
+# Guiding Principles
+
+The repository is organized around knowledge, not technology.
+
+Materials may later be transformed into:
+
+- AIMC lessons
+- learning paths
+- quizzes
+- exercises
+- mentor prompts
+- knowledge graph nodes
+- onboarding guides
+
+The original source material should always be preserved.
+
+Generated content can be recreated.
+Source knowledge cannot.
+
+---
+
+# Long-Term Vision
+
+Source Materials
+
+↓
+
+Structured Knowledge
+
+↓
+
+Concepts
+
+↓
+
+Knowledge Graph
+
+↓
+
+Mentoring
+
+↓
+
+Learning
+
+↓
+
+Continuous Knowledge Preservation
+
+---
+
+# Status
+
+Work in progress.
+
+This repository is actively evolving as additional COBOL mentoring materials, examples, exercises and lessons are recovered, reviewed and organized.
