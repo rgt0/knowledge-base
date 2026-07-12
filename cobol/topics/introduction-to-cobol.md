@@ -118,3 +118,111 @@ IDENTIFICATION DIVISION.
 PROGRAM-ID. MYPROGRAM.
 AUTHOR. JOHN DOE.
 DATE-WRITTEN. 2025-01-01.
+
+Environment Division
+The Environment Division describes the environment in which the program operates.
+Typical configuration information includes:
+
+files
+devices
+input/output definitions
+
+Example:
+COBOLENVIRONMENT DIVISION.INPUT-OUTPUT SECTION.FILE-CONTROL.    SELECT INPUT-FILE        ASSIGN TO "input.txt".    SELECT OUTPUT-FILE        ASSIGN TO "output.txt".Show more lines
+
+Data Division
+The Data Division contains all data definitions used by the program.
+Examples:
+
+variables
+records
+tables
+data structures
+
+Example:
+COBOLDATA DIVISION.WORKING-STORAGE SECTION.01 EMPLOYEE-RECORD.   05 EMPLOYEE-ID     PIC X(10).   05 EMPLOYEE-NAME   PIC X(50).   05 EMPLOYEE-AGE    PIC 9(3).Show more lines
+
+Procedure Division
+The Procedure Division contains the executable program logic.
+This is where business processing takes place.
+Example:
+COBOLPROCEDURE DIVISION.MAIN-PROGRAM.    PERFORM READ-FILE.    PERFORM PROCESS-DATA.    PERFORM WRITE-FILE.    STOP RUN.Show more lines
+
+COBOL Program Flow
+A simple COBOL program generally follows this flow:
+Plain TextIdentification Division        ↓Environment Division        ↓Data Division        ↓Procedure Division        ↓Program ExecutionShow more lines
+The executable statements are located in the Procedure Division.
+
+Common Structure Overview
+Plain TextIDENTIFICATION DIVISION.ENVIRONMENT DIVISION.DATA DIVISION.PROCEDURE DIVISION.Show more lines
+This structure appears in nearly every COBOL program.
+
+COBOL Coding Sheet Layout
+Traditional COBOL source code follows a fixed column layout.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ColumnsPurpose1-6Sequence Number Area7Indicator Area8-11Area A12-72Area B73-80Identification Area
+Although modern compilers are more flexible, understanding the traditional coding sheet remains important when working with legacy systems.
+
+Key Terms
+
+COBOL
+Enterprise Computing
+Mainframe
+Program Structure
+Identification Division
+Environment Division
+Data Division
+Procedure Division
+Business Processing
+
+
+Self-Check Questions
+
+What does COBOL stand for?
+Why was COBOL originally created?
+Which industries commonly use COBOL today?
+What information is stored in the Identification Division?
+What is the purpose of the Environment Division?
+Where are variables typically defined?
+Which division contains executable statements?
+
+
+Practical Exercise
+Create a simple COBOL program skeleton containing:
+
+IDENTIFICATION DIVISION
+PROGRAM-ID
+DATA DIVISION
+WORKING-STORAGE SECTION
+PROCEDURE DIVISION
+one DISPLAY statement
+
+Explain in your own words the purpose of each division.
