@@ -99,7 +99,6 @@ The four main divisions are:
 4. Procedure Division
 
 ---
-
 # Identification Division
 
 The Identification Division contains information about the program itself.
@@ -118,35 +117,82 @@ IDENTIFICATION DIVISION.
 PROGRAM-ID. MYPROGRAM.
 AUTHOR. JOHN DOE.
 DATE-WRITTEN. 2025-01-01.
+```
 
-Environment Division
+---
+
+# Environment Division
+
 The Environment Division describes the environment in which the program operates.
+
 Typical configuration information includes:
 
-files
-devices
-input/output definitions
+- files
+- devices
+- input/output definitions
 
 Example:
-COBOLENVIRONMENT DIVISION.INPUT-OUTPUT SECTION.FILE-CONTROL.    SELECT INPUT-FILE        ASSIGN TO "input.txt".    SELECT OUTPUT-FILE        ASSIGN TO "output.txt".Show more lines
 
-Data Division
+```cobol
+ENVIRONMENT DIVISION.
+
+INPUT-OUTPUT SECTION.
+
+FILE-CONTROL.
+    SELECT INPUT-FILE
+        ASSIGN TO "input.txt".
+
+    SELECT OUTPUT-FILE
+        ASSIGN TO "output.txt".
+```
+
+---
+
+# Data Division
+
 The Data Division contains all data definitions used by the program.
+
 Examples:
 
-variables
-records
-tables
-data structures
+- variables
+- records
+- tables
+- data structures
 
 Example:
-COBOLDATA DIVISION.WORKING-STORAGE SECTION.01 EMPLOYEE-RECORD.   05 EMPLOYEE-ID     PIC X(10).   05 EMPLOYEE-NAME   PIC X(50).   05 EMPLOYEE-AGE    PIC 9(3).Show more lines
 
-Procedure Division
+```cobol
+DATA DIVISION.
+
+WORKING-STORAGE SECTION.
+
+01 EMPLOYEE-RECORD.
+   05 EMPLOYEE-ID     PIC X(10).
+   05 EMPLOYEE-NAME   PIC X(50).
+   05 EMPLOYEE-AGE    PIC 9(3).
+```
+
+---
+
+# Procedure Division
+
 The Procedure Division contains the executable program logic.
+
 This is where business processing takes place.
+
 Example:
-COBOLPROCEDURE DIVISION.MAIN-PROGRAM.    PERFORM READ-FILE.    PERFORM PROCESS-DATA.    PERFORM WRITE-FILE.    STOP RUN.Show more lines
+
+```cobol
+PROCEDURE DIVISION.
+
+MAIN-PROGRAM.
+
+    PERFORM READ-FILE.
+    PERFORM PROCESS-DATA.
+    PERFORM WRITE-FILE.
+
+    STOP RUN.
+```
 
 COBOL Program Flow
 A simple COBOL program generally follows this flow:
