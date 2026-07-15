@@ -1,0 +1,42 @@
+# Function Point Analysis Glossary
+
+| Term | Category | Short Description | Examples | Discovery Questions |
+|--------|----------|----------|----------|----------|
+| Function Point Analysis (FPA) | Methodology | Technique used to measure software functionality from a business perspective. | Application sizing, modernization assessment | What functionality does the system provide? |
+| Function Point (FP) | Measurement | Unit used to measure functional size. | 95 FP, 250 FP application | How much business functionality is delivered? |
+| Functional Size | Measurement | Amount of business functionality delivered by an application. | Order Management System, Banking System | What can the application do for its users? |
+| External Input (EI) | Function | Data or business events entering the application. | Create Customer, Update Order, Submit Claim | What enters the application? Which data is updated? |
+| External Output (EO) | Function | Information produced and delivered by the application. | Reports, Notifications, Export Files | What leaves the application? Who consumes it? |
+| External Inquiry (EQ) | Function | Request that retrieves information without maintaining data. | Customer Lookup, Product Search, Balance Inquiry | Which information is queried? |
+| Internal Logical File (ILF) | Data | Logical group of data maintained by the application. | Customer, Order, Product | Which application owns this data? |
+| External Interface File (EIF) | Data | Logical group of data used but maintained elsewhere. | Reference Data, Shared Master Data | Who owns this data? How is it accessed? |
+| Business Function | Business | User-visible capability delivered by the system. | Create Order, Generate Invoice | What business value is provided? |
+| Business Capability | Business | Collection of related business functions supporting a business area. | Order Management, Finance, Logistics | Which capability does the application support? |
+| Business Process | Business | Sequence of business activities producing an outcome. | Order-to-Cash, Procure-to-Pay | Which process is supported? |
+| User Transaction | Function | Interaction between a user and the application. | Inquiry, Update, Submission | What business action is performed? |
+| Transaction Boundary | Architecture | Boundary where information crosses into or out of the application. | User input screen, external interface | Where does the application interact with its environment? |
+| Application Boundary | Architecture | Scope separating the application from external systems. | Internal modules vs external interfaces | What belongs to the application? |
+| Application | Architecture | Software component providing business functionality. | Billing System, Inventory System | What business capability is implemented? |
+| Interface | Architecture | Connection between applications or systems. | REST API, MQ Message, File Transfer | Which systems exchange information? |
+| Dependency | Analysis | Relationship between functions, data or applications. | Program-to-Program, Program-to-Table | What relies on this component? |
+| Data Entity | Data | Logical business object represented by data. | Customer, Product, Contract | What real-world object is represented? |
+| Data Element | Data | Individual piece of information within a logical file. | Customer Name, Account Number | What information is stored? |
+| Record Type | Data | Distinct logical structure within a data group. | Customer Record, Product Record | Which business objects are represented? |
+| Complexity | Measurement | Classification used during function counting. | Low, Average, High | How complex is the function? |
+| Weighting Factor | Measurement | Numeric value applied to a function type during counting. | EI Weight=4, EO Weight=5 | How much should this function contribute to FP count? |
+| Function Count | Measurement | Number of identified functional components. | 10 EIs, 5 EOs | How many business functions exist? |
+| Estimation | Analysis | Prediction of effort, cost or duration. | Project sizing, budget planning | How much effort is required? |
+| Productivity | Measurement | Relationship between effort and delivered functionality. | Hours per FP | How efficiently is software delivered? |
+| Impact Analysis | Analysis | Assessment of consequences resulting from a change. | Change Request Assessment | Which systems and functions are affected? |
+| Application Discovery | Analysis | Process of understanding application structure and responsibilities. | System exploration, onboarding | What does the application do? |
+| Dependency Analysis | Analysis | Identification of relationships between components. | Program, table and interface mapping | What is connected to this object? |
+| Business Capability Mapping | Analysis | Linking technical components to business capabilities. | Order programs linked to Order Management | Which capability does this component support? |
+| Modernization Assessment | Analysis | Evaluation of systems for migration or transformation. | Legacy modernization | What should be modernized and why? |
+| System Discovery | Methodology | Structured exploration of unknown systems. | Onboarding, architecture analysis | How does the system work? |
+| Knowledge Transfer | Methodology | Sharing understanding between individuals or teams. | Mentoring, onboarding | How can others learn the system faster? |
+| Application Portfolio | Architecture | Collection of related applications in an organization. | Finance Portfolio, Logistics Portfolio | How do applications relate to each other? |
+| Logical Data Group | Data | Collection of related business information. | Customer Data, Order Data | Which information logically belongs together? |
+| Ownership | Governance | Responsibility for a function, application or data set. | Application Owner, Data Owner | Who is accountable for this component? |
+| Change Request | Analysis | Proposed modification to system functionality or behavior. | New feature, business rule update | What needs to change? |
+| Functional Decomposition | Analysis | Breaking business functionality into smaller parts. | Capability → Function → Transaction | How is functionality structured? |
+| AI-Assisted Functional Analysis | Methodology | Using AI to identify functions, data and dependencies. | Requirement analysis, COBOL analysis | What can AI discover automatically? |
