@@ -1,0 +1,326 @@
+# AI-Assisted Function Point Analysis
+
+## Short Description
+
+AI-Assisted Function Point Analysis uses artificial intelligence to support the discovery, identification and classification of business functionality within software systems.
+
+The objective is not to replace analysts, but to accelerate system understanding, reduce manual effort and improve consistency.
+
+Within P21, AI-assisted FPA is primarily used as a system discovery technique.
+
+---
+
+## Why Use AI?
+
+Traditional Function Point Analysis often requires:
+
+- application knowledge
+- business knowledge
+- source code analysis
+- database analysis
+- document review
+
+AI can accelerate these activities by helping identify:
+
+- business functions
+- transactions
+- data entities
+- application boundaries
+- dependencies
+
+---
+
+## AI-Supported Discovery Model
+
+```text
+Requirements
+Documentation
+Source Code
+Database Metadata
+Operational Information
+        │
+        ▼
+       AI
+        │
+        ▼
+Business Functions
+Applications
+Data Entities
+Dependencies
+Interfaces
+        │
+        ▼
+Function Point Analysis
+```
+
+---
+
+## Common AI Use Cases
+
+### Requirement Analysis
+
+AI analyzes requirements and identifies candidate functions.
+
+Example:
+
+Requirement:
+
+"Users can create, update and cancel orders."
+
+AI Suggestion:
+
+```text
+EI  Create Order
+EI  Update Order
+EI  Cancel Order
+ILF Order
+```
+
+Human validation remains necessary.
+
+---
+
+### Documentation Analysis
+
+AI extracts functional information from existing documents.
+
+Examples:
+
+- Functional Specifications
+- Business Requirements
+- User Guides
+- Architecture Documents
+
+Possible outputs:
+
+- candidate business functions
+- application boundaries
+- interface identification
+
+---
+
+### COBOL Program Analysis
+
+AI analyzes legacy source code to identify functionality.
+
+Input:
+
+```text
+COBOL Program
+JCL
+Copybooks
+DB2 Access
+```
+
+Output:
+
+```text
+Business Functions
+Data Groups
+Transactions
+Dependencies
+```
+
+Questions:
+
+- What does this program do?
+- Which tables are updated?
+- Which business process is supported?
+
+---
+
+### DB2 Discovery
+
+AI can analyze database structures and suggest logical groupings.
+
+Input:
+
+```text
+Tables
+Views
+Indexes
+Relationships
+```
+
+Output:
+
+```text
+Candidate ILFs
+Business Entities
+Data Ownership
+```
+
+Example:
+
+```text
+CUSTOMER
+CUSTOMER_ADDRESS
+CUSTOMER_CONTACT
+```
+
+Suggested logical entity:
+
+```text
+Customer
+```
+
+---
+
+### Interface Discovery
+
+AI identifies information exchanged between applications.
+
+Examples:
+
+- MQ Messages
+- Files
+- APIs
+- Database Sharing
+
+Possible classifications:
+
+```text
+EIF
+EO
+EI
+```
+
+depending on application ownership.
+
+---
+
+## AI-Assisted Counting Process
+
+```text
+Identify Functions
+        │
+        ▼
+AI Suggestion
+        │
+        ▼
+Human Review
+        │
+        ▼
+Complexity Classification
+        │
+        ▼
+Function Point Calculation
+```
+
+AI assists the process but does not replace final validation.
+
+---
+
+## Human-in-the-Loop Principle
+
+P21 follows a Human-in-the-Loop approach.
+
+```text
+AI Generates
+        │
+        ▼
+Analyst Reviews
+        │
+        ▼
+Knowledge Refined
+```
+
+Analyst responsibilities:
+
+- validate functions
+- validate ownership
+- validate boundaries
+- validate classifications
+
+---
+
+## Benefits
+
+### Faster Discovery
+
+Large systems can be explored more quickly.
+
+### Better Knowledge Transfer
+
+Junior engineers can understand unfamiliar applications faster.
+
+### Consistent Analysis
+
+AI can apply the same discovery approach repeatedly.
+
+### Legacy System Support
+
+Particularly useful for:
+
+- COBOL
+- PL/I
+- DB2
+- Batch Applications
+- CICS Applications
+
+---
+
+## Limitations
+
+AI may:
+
+- misunderstand business context
+- infer incorrect ownership
+- merge unrelated functions
+- miss implicit business rules
+
+Results should always be reviewed by domain experts.
+
+---
+
+## Example Workflow
+
+```text
+Unknown COBOL Application
+        │
+        ▼
+Source Code Analysis
+        │
+        ▼
+AI Identifies:
+    - Business Functions
+    - Data Entities
+    - Interfaces
+        │
+        ▼
+Human Validation
+        │
+        ▼
+FPA Classification
+        │
+        ▼
+System Understanding
+```
+
+---
+
+## Relationship to P21
+
+AI-assisted FPA supports the primary P21 objective:
+
+> Learn how to understand unknown systems.
+
+The focus is not on automated estimation.
+
+The focus is on accelerating:
+
+- application understanding
+- dependency discovery
+- business capability mapping
+- impact analysis
+- modernization preparation
+- knowledge transfer
+
+---
+
+## Key Takeaway
+
+AI-assisted Function Point Analysis combines traditional functional analysis with modern AI capabilities.
+
+The result is a structured and scalable approach to understanding enterprise applications, especially in large legacy environments where documentation is incomplete and 
+system knowledge is distributed across multiple teams.
